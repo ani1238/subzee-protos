@@ -1,0 +1,11 @@
+
+syntax = "proto3";
+
+package src.common.error;
+
+option go_package = "github.com/project-subzee-protos/src";
+
+message CommonError {
+    string error_code = 1;
+    string error_message = 2;
+}

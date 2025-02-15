@@ -2,6 +2,22 @@ syntax = "proto3";
 
 option go_package = "github.com/project-subzee-protos/src";
 
+import "src/common/error.proto"; 
+service UserService {
+    // Adds a user to system
+    rpc AddUser (AddUserRequest) returns (AddUserResponse) {}
+}
+
+message AddUserRequest{
+    string id = 1;
+    string name = 2;
+    string email_id = 3;
+}
+
+message AddUserResponse{
+    string message = 1;
+    src.common.error.CommonError error = 2;
+}
 
 message User {
     string id = 1;
