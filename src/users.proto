@@ -3,7 +3,7 @@ syntax = "proto3";
 option go_package = "github.com/project-subzee-protos/src";
 
 
-message Users {
+message User {
     string id = 1;
     string name = 2;
     string email_id = 3;
