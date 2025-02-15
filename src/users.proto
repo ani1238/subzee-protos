@@ -8,7 +8,7 @@ import "common/error.proto";
 
 service UserService {
     // Adds a user to system
-    rpc AddUser (AddUserRequest) returns (AddUserResponse) {}
+    rpc AddUser(AddUserRequest) returns (AddUserResponse) {}
 }
 
 message AddUserRequest{
