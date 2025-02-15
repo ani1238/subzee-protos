@@ -1,4 +1,4 @@
-module github.com/project-subzee-protos
+module github.com/ani1238/subzee-protos
 
 go 1.22.0
 
