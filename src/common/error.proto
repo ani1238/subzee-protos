@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package error;
+package src.common.error;
 
 option go_package = "github.com/ani1238/subzee-protos/src/common";
 

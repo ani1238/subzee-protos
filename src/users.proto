@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+package src;
+
 option go_package = "github.com/ani1238/subzee-protos/src";
 
 import "common/error.proto"; 
@@ -17,7 +19,7 @@ message AddUserRequest{
 
 message AddUserResponse{
     string message = 1;
-    error.CommonError error = 2;
+    src.common.error.CommonError error = 2;
 }
 
 message User {
